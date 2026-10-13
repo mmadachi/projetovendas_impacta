@@ -13,6 +13,7 @@ no Power BI, feito em 4 partes ao longo do semestre.
 | Entrega | Data | O que essa parte mostra | Status |
 |---|---|---|---|
 | AC1 | 14/09 | Resumo geral das vendas (total vendido, quantidade, etc.) | Concluído |
+| AC2 | 13/10 | Quanto cada vendedor vendeu | Concluído |
 
 ## Links do projeto
 

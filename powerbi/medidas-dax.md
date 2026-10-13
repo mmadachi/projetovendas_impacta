@@ -41,3 +41,21 @@ gasto em cada venda. Usei `DIVIDE` em vez do sinal de "/" porque essa função
 evita erro quando não há nenhuma nota (dividir por zero).
 
 ---
+
+## Entrega 2 (AC2) — vendedores
+
+**% Participação Vendedor**
+```
+DIVIDE([Valor Vendas], CALCULATE([Valor Vendas], ALL(Dim_Vendedor)))
+```
+O que faz: calcula que fatia, em porcentagem, cada vendedor representa do
+total vendido pela empresa.
+
+**Ranking Vendedor**
+```
+RANKX(ALL(Dim_Vendedor[Vendedor]), [Valor Vendas],, DESC)
+```
+O que faz: coloca os vendedores em ordem, do que mais vendeu para o que
+menos vendeu.
+
+---
