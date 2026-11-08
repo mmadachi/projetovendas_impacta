@@ -59,3 +59,26 @@ O que faz: coloca os vendedores em ordem, do que mais vendeu para o que
 menos vendeu.
 
 ---
+
+## Entrega 3 (AC3) — produtos e lucro
+
+**Custo Total**
+```
+SUMX(Fato_Vendas, Fato_Vendas[Quantidade] * RELATED(Dim_Produto[CustoUnitario]))
+```
+O que faz: parecido com a fórmula de Valor Vendas, mas usando o custo do
+produto em vez do preço de venda — dá quanto a empresa gastou.
+
+**Margem**
+```
+[Valor Vendas] - [Custo Total]
+```
+O que faz: o lucro. É simplesmente o que foi vendido menos o que custou.
+
+**% Margem**
+```
+DIVIDE([Margem], [Valor Vendas])
+```
+O que faz: mostra que porcentagem do que foi vendido virou lucro.
+
+---
