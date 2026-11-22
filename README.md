@@ -15,6 +15,7 @@ no Power BI, feito em 4 partes ao longo do semestre.
 | AC1 | 14/09 | Resumo geral das vendas (total vendido, quantidade, etc.) | Concluído |
 | AC2 | 13/10 | Quanto cada vendedor vendeu | Concluído |
 | AC3 | 08/11 | Quais produtos dão mais lucro | Concluído |
+| Entrega Final | 22/11 | Painel mais completo, juntando tudo | Concluído |
 
 ## Links do projeto
 

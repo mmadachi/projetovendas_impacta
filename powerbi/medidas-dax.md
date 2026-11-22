@@ -82,3 +82,30 @@ DIVIDE([Margem], [Valor Vendas])
 O que faz: mostra que porcentagem do que foi vendido virou lucro.
 
 ---
+
+## Entrega Final (AC4) — painel mais completo
+
+**Vendas Trimestre Anterior**
+```
+CALCULATE([Valor Vendas], DATEADD(Dim_Data[Data], -1, QUARTER))
+```
+O que faz: pega o valor vendido, mas "voltando" um trimestre no tempo —
+serve para comparar um trimestre com o anterior.
+
+**Variação % Trimestral**
+```
+DIVIDE([Valor Vendas] - [Vendas Trimestre Anterior], [Vendas Trimestre Anterior])
+```
+O que faz: calcula se as vendas do trimestre atual subiram ou caíram, em
+porcentagem, comparado com o trimestre anterior.
+
+**% Atingimento da Meta**
+```
+DIVIDE([Valor Vendas], [Meta Anual])
+```
+O que faz: compara o quanto foi vendido com uma meta.
+
+> Observação: como a empresa não deu uma meta oficial de vendas nos dados
+> recebidos, usei um número de meta ilustrativo (inventado só para o
+> gráfico funcionar) — se você tiver uma meta real, é só trocar esse
+> número.
